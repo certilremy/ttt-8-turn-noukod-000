@@ -4,11 +4,11 @@ end
 
 def valid_move?(board , index)
 
-  if  board[index] == " " || ""
+  if  board[index] = "" || " "
     return true
 
   end
-elsif  board[index] == "O" || "X"
+elsif  board[index] = "O" || "X"
   return false
 
 
