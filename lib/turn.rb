@@ -6,9 +6,9 @@ end
 def valid_move?(board , index)
 if position_taken?
   return false
-  
+
 end
-  
+
 
 
 end
@@ -24,5 +24,5 @@ def position_taken?
     return false
   end
 
-  
+
 end
