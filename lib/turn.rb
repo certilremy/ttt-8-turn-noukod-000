@@ -38,3 +38,19 @@ def position_taken?(board,index)
       true
   end
 end
+
+def turn(board)
+
+  puts "Please enter 1-9:"
+  user_input=gets.chomp
+  user_input=input_to_index(user_input)
+  is_move_valid = valid_move?(board,user_input)
+  until  is_move_valid == true
+    puts "Please enter 1-9:"
+    user_input=gets.chomp
+    user_input=input_to_index(user_input)
+    is_move_valid = valid_move?(board,user_input)
+  end
+  move(board,user_input)
+  display_board(board)
+end
