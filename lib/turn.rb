@@ -28,13 +28,14 @@ end
 
 
 
-def position_taken?
-
-  if  board[index] = "" || " "
-    return true
-
-  elsif  board[index] = "O" || "X"
-    return false
+def position_taken?(board,index)
+  if index >= 0 && index < 9
+    if board[index] == " " || board[index] == "" || board[index] == nil
+      false
+    elsif board[index] == "X" || board[index] == "O"
+      true
+    end
+  else
+      true
   end
-
 end
