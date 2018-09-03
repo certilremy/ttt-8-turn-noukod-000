@@ -10,9 +10,8 @@ def input_to_index(user_input)
   return user_input.to_i-1
 end
 
-def move(board , index)
-
-
+def move(array,index,value="X")
+array[index] = value
 end
 
 def valid_move?(board , index)
